@@ -21,7 +21,6 @@ var params = {
     Source: 'vanpho01@gmail.com'
 };
 
-ses.sendEmail(params, function (err, data) {
-    if (err) return console.log(err, err.stack);
-    console.log(data);
-});
+ses.sendEmail(params).promise()
+.then(res => console.log(res))
+.catch(error => console.log(error));
