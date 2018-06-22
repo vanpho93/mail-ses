@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.262.1",
+    "dotenv": "^6.0.0"
+  }
+}
